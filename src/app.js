@@ -6,8 +6,8 @@ import './styles/styles.scss';
 
 const routes = (
   <BrowserRouter>
-    
+
   </BrowserRouter>
 );
 
-ReactDOM.render(<p>Test</p>, document.getElementById('app'));
+ReactDOM.render(routes, document.getElementById('app'));
