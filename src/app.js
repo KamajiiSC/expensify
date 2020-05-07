@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
@@ -36,13 +36,13 @@ const NotFound = () => (
 
 const routes = (
   <BrowserRouter>
-    <div>
-     <Route path="/" component={ExpenseDashboard} exact={true} />
-     <Route path="/create" component={AddExpense} exact={true} />
-    </div>
-    <Route path="/edit" component={EditExpense} exact={true}/>
-    <Route path="/help" component={HelpPage} exact={true}/>
-    <Route component={NotFound}/>
+    <Switch>
+      <Route path="/" component={ExpenseDashboard} exact={true} />
+      <Route path="/create" component={AddExpense} exact={true} />
+      <Route path="/edit" component={EditExpense} exact={true}/>
+      <Route path="/help" component={HelpPage} exact={true}/>
+      <Route component={NotFound}/>
+    </Switch>
   </BrowserRouter>
 );
 
