@@ -35,6 +35,7 @@ const routes = (
      <Route path="/create" component={AddExpense} exact={true} />
     </div>
     <Route path="/edit" component={EditExpense} exact={true}/>
+    <Route path="/help" component={HelpPage} exact={true}/>
   </BrowserRouter>
 );
 
