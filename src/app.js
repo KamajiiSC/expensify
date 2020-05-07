@@ -28,6 +28,12 @@ const HelpPage = () => (
   </div>
 );
 
+const NotFound = () => (
+  <div>
+    404!
+  </div>
+);
+
 const routes = (
   <BrowserRouter>
     <div>
