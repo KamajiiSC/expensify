@@ -16,6 +16,18 @@ const AddExpense = () => (
   </div>
 );
 
+const EditExpense = () => (
+  <div>
+    
+  </div>
+);
+
+const HelpPage = () => (
+  <div>
+
+  </div>
+);
+
 const routes = (
   <BrowserRouter>
     <div>
