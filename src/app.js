@@ -4,4 +4,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
+const routes = (
+  <BrowserRouter>
+    
+  </BrowserRouter>
+);
+
 ReactDOM.render(<p>Test</p>, document.getElementById('app'));
