@@ -4,9 +4,15 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
+const ExpenseDashboard = () => (
+  <div>
+    Something to show
+  </div>
+);
+
 const routes = (
   <BrowserRouter>
-
+    <Route path="/" component={ExpenseDashboard}/>
   </BrowserRouter>
 );
 
