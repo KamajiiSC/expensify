@@ -18,13 +18,13 @@ const AddExpense = () => (
 
 const EditExpense = () => (
   <div>
-    
+    Edit your expenses
   </div>
 );
 
 const HelpPage = () => (
   <div>
-
+    need help?
   </div>
 );
 
