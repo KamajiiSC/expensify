@@ -20,7 +20,7 @@ const routes = (
   <BrowserRouter>
     <div>
      <Route path="/" component={ExpenseDashboard}/>
-     <Route path="create" component={AddExpense} />
+     <Route path="/create" component={AddExpense} />
     </div>
   </BrowserRouter>
 );
