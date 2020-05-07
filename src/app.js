@@ -10,9 +10,18 @@ const ExpenseDashboard = () => (
   </div>
 );
 
+const AddExpense = () => (
+  <div>
+    for AddExpense
+  </div>
+);
+
 const routes = (
   <BrowserRouter>
-    <Route path="/" component={ExpenseDashboard}/>
+    <div>
+     <Route path="/" component={ExpenseDashboard}/>
+     <Route path="create" component={AddExpense} />
+    </div>
   </BrowserRouter>
 );
 
