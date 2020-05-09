@@ -1,15 +1,10 @@
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import React from 'react';
+import AddExpense from '../components/AddExpense';
 
 const ExpenseDashboard = () => (
   <div>
     Something to show
-  </div>
-);
-
-const AddExpense = () => (
-  <div>
-    for AddExpense
   </div>
 );
 
