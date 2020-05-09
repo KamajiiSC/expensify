@@ -5,6 +5,7 @@ import EditExpense from '../components/EditExpense';
 import ExpenseDashboard from '../components/ExpenseDashboard';
 import Header from '../components/Header.js';
 import HelpPage from '../components/HelpPage';
+import NotFound from '../components/NotFound';
 
 const AppRouter = () => (
     <BrowserRouter>
