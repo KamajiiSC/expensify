@@ -4,12 +4,7 @@ import AddExpense from '../components/AddExpense';
 import EditExpense from '../components/EditExpense';
 import ExpenseDashboard from '../components/ExpenseDashboard';
 import Header from '../components/Header.js';
-
-const HelpPage = () => (
-  <div>
-    need help?
-  </div>
-);
+import HelpPage from '../components/HelpPage';
 
 const NotFound = () => (
   <div>
