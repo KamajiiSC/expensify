@@ -2,12 +2,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import React from 'react';
 import AddExpense from '../components/AddExpense';
 import EditExpense from '../components/EditExpense';
-
-const ExpenseDashboard = () => (
-  <div>
-    Something to show
-  </div>
-);
+import ExpenseDashboard from '../components/ExpenseDashboard';
 
 const HelpPage = () => (
   <div>
