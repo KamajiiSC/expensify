@@ -1,16 +1,11 @@
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import React from 'react';
 import AddExpense from '../components/AddExpense';
+import EditExpense from '../components/EditExpense';
 
 const ExpenseDashboard = () => (
   <div>
     Something to show
-  </div>
-);
-
-const EditExpense = () => (
-  <div>
-    Edit your expenses
   </div>
 );
 
