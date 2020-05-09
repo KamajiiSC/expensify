@@ -34,6 +34,12 @@ const NotFound = () => (
   </div>
 );
 
+const Header = () => (
+  <header>
+    <h1>Expensify</h1>
+  </header>
+);
+
 const routes = (
   <BrowserRouter>
     <Switch>
