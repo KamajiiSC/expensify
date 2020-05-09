@@ -37,9 +37,9 @@ const NotFound = () => (
 const Header = () => (
   <header>
     <h1>Expensify</h1>
-    <Link to='/'>Home</Link>
-    <Link to='/create'>Add Expense</Link>
-    <Link to='/edit'>Edit</Link>
+    <Link to='/'>Dashboard</Link>
+    <Link to='/create'>Create Expense</Link>
+    <Link to='/edit'>Edit Expense</Link>
     <Link to='/help'>Help</Link>
   </header>
 );
