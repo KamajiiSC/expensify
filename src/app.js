@@ -30,7 +30,7 @@ const HelpPage = () => (
 
 const NotFound = () => (
   <div>
-    404!
+    404! - <a href='/'>Go home</a>
   </div>
 );
 
