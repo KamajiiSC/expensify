@@ -42,13 +42,17 @@ const Header = () => (
 
 const routes = (
   <BrowserRouter>
-    <Switch>
-      <Route path="/" component={ExpenseDashboard} exact={true} />
-      <Route path="/create" component={AddExpense} exact={true} />
-      <Route path="/edit" component={EditExpense} exact={true}/>
-      <Route path="/help" component={HelpPage} exact={true}/>
-      <Route component={NotFound}/>
-    </Switch>
+    <div>
+      <Header />
+      <Switch>
+        <Route path="/" component={ExpenseDashboard} exact={true} />
+        <Route path="/create" component={AddExpense} exact={true} />
+        <Route path="/edit" component={EditExpense} exact={true}/>
+        <Route path="/help" component={HelpPage} exact={true}/>
+        <Route component={NotFound}/>
+      </Switch>
+    </div>
+ 
   </BrowserRouter>
 );
 
