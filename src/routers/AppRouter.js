@@ -6,12 +6,6 @@ import ExpenseDashboard from '../components/ExpenseDashboard';
 import Header from '../components/Header.js';
 import HelpPage from '../components/HelpPage';
 
-const NotFound = () => (
-  <div>
-    404! - <Link to='/'>Go home</Link>
-  </div>
-);
-
 const AppRouter = () => (
     <BrowserRouter>
     <div>
