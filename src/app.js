@@ -37,10 +37,10 @@ const NotFound = () => (
 const Header = () => (
   <header>
     <h1>Expensify</h1>
-    <Link to='/'>Dashboard</Link>
-    <Link to='/create'>Create Expense</Link>
-    <Link to='/edit'>Edit Expense</Link>
-    <Link to='/help'>Help</Link>
+    <NavLink to='/'>Dashboard</NavLink>
+    <NavLink to='/create'>Create Expense</NavLink>
+    <NavLink to='/edit'>Edit Expense</NavLink>
+    <NavLink to='/help'>Help</NavLink>
   </header>
 );
 
