@@ -1,9 +1,9 @@
 import React from 'react';
 
-const EditExpense = () => (
+const EditExpensePage = () => (
   <div>
     Edit your expenses
   </div>
 );
 
-export default EditExpense;
+export default EditExpensePage;

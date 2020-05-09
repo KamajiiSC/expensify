@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AddExpense = () => (
+const AddExpensePage = () => (
   <div>
     for AddExpense
   </div>
 );
 
-export default AddExpense;
+export default AddExpensePage;
