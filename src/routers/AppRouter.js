@@ -41,8 +41,8 @@ const Header = () => (
   </header>
 );
 
-const routes = (
-  <BrowserRouter>
+const AppRouter = () => (
+    <BrowserRouter>
     <div>
       <Header />
       <Switch>
@@ -56,3 +56,4 @@ const routes = (
  
   </BrowserRouter>
 );
+
