@@ -44,5 +44,6 @@ store.dispatch({
 });
 
 store.dispatch({
-  type: 'SET'
+  type: 'SET',
+  count: 101
 });
