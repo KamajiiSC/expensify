@@ -30,8 +30,6 @@ store.dispatch({
   incrementBy: 5
 });
 
-unsubscribe();
-
 store.dispatch({
   type: 'DECREMENT'
 });
