@@ -10,4 +10,6 @@ const person = {
 const { name, age } = person;
 console.log(`${name} is ${age}.`);
 
-console.log(`It's ${person.location.temp} in ${person.location.city}.`);
+if(person.location.city && person.location.temp) {
+  console.log(`It's ${person.location.temp} in ${person.location.city}.`);
+}
