@@ -7,7 +7,7 @@ const person = {
   }
 };
 
-const { name, age } = person;
+const { name = 'Anonymous', age } = person;
 console.log(`${name} is ${age}.`);
 
 const { city, temp: temperature } = person.location;
