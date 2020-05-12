@@ -30,6 +30,12 @@ store.dispatch({
 });
 
 store.dispatch({
+  type: 'DECREMENT'
+});
+
+console.log(store.getState());
+
+store.dispatch({
   type: 'RESET'
 })
 
