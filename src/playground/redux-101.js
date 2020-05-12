@@ -6,8 +6,12 @@ const store = createStore((state = { count: 0 }, action) => {
       return{
         count: state.count + 1
       };
-      default:
-        return state;
+    case 'DECREMENT': 
+      return{
+        count: state.count - 1
+      };
+    default:
+      return state;
   }
 });
 
