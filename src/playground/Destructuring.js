@@ -29,5 +29,5 @@
 
 const address = ['1299 S Juniper Street', 'Baltimore', 'Maryland', '19147'];
 
-const [street, city, state, zip] = address;
+const [street, city = 'A city', state, zip] = address;
 console.log(`You are in ${address[1]} ${address[2]}`)
