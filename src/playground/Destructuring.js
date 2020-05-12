@@ -26,3 +26,7 @@
 // const { name: publisherName = 'Self-Published'} = book.publisher;
 
 // console.log(publisherName);
+
+const address = ['1299 S Juniper Street', 'Baltimore', 'Maryland', '19147'];
+
+console.log(`You are in ${address[1]} ${address[2]}`)
