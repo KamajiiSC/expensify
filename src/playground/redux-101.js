@@ -12,6 +12,10 @@ const store = createStore((state = { count: 0 }, action) => {
       return{
         count: state.count - decrementBy
       };
+    case 'SET':
+      return {
+        count: action.count
+      }
     case 'RESET':
       return {
         count: state.count = 0
