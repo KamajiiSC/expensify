@@ -31,7 +31,8 @@ store.dispatch({
 });
 
 store.dispatch({
-  type: 'DECREMENT'
+  type: 'DECREMENT',
+  decrementBy: 5
 });
 
 store.dispatch({
