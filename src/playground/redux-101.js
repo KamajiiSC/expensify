@@ -29,4 +29,8 @@ store.dispatch({
   type: 'DECREMENT'
 });
 
+store.dispatch({
+  type: 'RESET'
+})
+
 console.log(store.getState());
