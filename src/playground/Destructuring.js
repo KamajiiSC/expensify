@@ -22,3 +22,5 @@ const book = {
     name: 'Penguin'
   }
 };
+
+console.log(publisherName);
