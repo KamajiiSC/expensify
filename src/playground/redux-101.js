@@ -24,7 +24,8 @@ const unsubscribe = store.subscribe(() => {
 });
 
 store.dispatch({
-  type: 'INCREMENT'
+  type: 'INCREMENT',
+  incrementBy: 5
 });
 
 unsubscribe();
