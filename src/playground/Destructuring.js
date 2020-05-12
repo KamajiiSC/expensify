@@ -27,7 +27,11 @@
 
 // console.log(publisherName);
 
-const address = ['1299 S Juniper Street', 'Baltimore', 'Maryland', '19147'];
+// const address = ['1299 S Juniper Street', 'Baltimore', 'Maryland', '19147'];
 
-const [street, city = 'A city', state, zip] = address;
-console.log(`You are in ${address[1]} ${address[2]}`)
+// const [street, city = 'A city', state, zip] = address;
+// console.log(`You are in ${address[1]} ${address[2]}`)
+
+const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75'];
+
+console.log(`A medium Coffee (hot) costs $2.50`);
