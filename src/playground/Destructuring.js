@@ -6,3 +6,5 @@ const person = {
     temp:60
   }
 };
+
+console.log(`${person.name} is ${person.age}.`);
