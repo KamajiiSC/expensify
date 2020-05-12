@@ -10,7 +10,7 @@ const store = createStore((state = { count: 0 }, action) => {
       };
     case 'DECREMENT': 
       return{
-        count: state.count - 1
+        count: state.count - decrementBy
       };
     case 'RESET':
       return {
