@@ -8,7 +8,6 @@ const person = {
 };
 
 const { name, age } = person;
-// const name = person.name;
-// const age = person.age;
-
 console.log(`${name} is ${age}.`);
+
+console.log(`It's ${person.location.temp} in ${person.location.city}.`);
