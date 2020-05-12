@@ -7,7 +7,8 @@ const person = {
   }
 };
 
-const name = person.name;
-const age = person.age;
+const { name, age } = person;
+// const name = person.name;
+// const age = person.age;
 
 console.log(`${name} is ${age}.`);
