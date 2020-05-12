@@ -42,3 +42,7 @@ store.dispatch({
 store.dispatch({
   type: 'RESET'
 });
+
+store.dispatch({
+  type: 'SET'
+});
