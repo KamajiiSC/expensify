@@ -10,7 +10,7 @@ const person = {
 const { name, age } = person;
 console.log(`${name} is ${age}.`);
 
-const { city, temp } = person.location;
-if(city && temp) {
-  console.log(`It's ${temp} in ${city}.`);
+const { city, temp: temperature } = person.location;
+if(city && temperature) {
+  console.log(`It's ${temperature} in ${city}.`);
 }
