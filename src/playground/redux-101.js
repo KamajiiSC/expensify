@@ -1,5 +1,11 @@
 import { createStore } from 'redux';
 
+const incrementCount = () => {
+  return {
+    
+  };
+};
+
 const store = createStore((state = { count: 0 }, action) => {
   switch(action.type) {
     case 'INCREMENT':
