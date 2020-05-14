@@ -2,7 +2,7 @@ import { createStore } from 'redux';
 
 const incrementCount = () => {
   return {
-    
+    type: 'INCREMENT'
   };
 };
 
