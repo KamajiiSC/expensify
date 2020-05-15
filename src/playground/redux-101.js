@@ -18,7 +18,7 @@ const store = createStore((state = { count: 0 }, action) => {
       };
     case 'DECREMENT': 
       return{
-        count: state.count - decrementBy
+        count: state.count - action.decrementBy
       };
     case 'SET':
       return {
