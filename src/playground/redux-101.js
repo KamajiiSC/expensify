@@ -57,7 +57,4 @@ store.dispatch({
   type: 'RESET'
 });
 
-store.dispatch({
-  type: 'SET',
-  count: 101
-});
+store.dispatch(setCount({ setTo: 3 }));
