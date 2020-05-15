@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-const incrementCount = ({ incrementBy } = {}) => ({
+const incrementCount = ({ incrementBy = 1 } = {}) => ({
   type: 'INCREMENT',
   incrementBy: typeof incrementBy === "number" ? incrementBy : 1
 });
