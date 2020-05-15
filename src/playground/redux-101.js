@@ -5,6 +5,10 @@ const incrementCount = ({ incrementBy = 1 } = {}) => ({
   incrementBy
 });
 
+const decrementCount = () => ({
+  type: 'DECREMENT'
+});
+
 const store = createStore((state = { count: 0 }, action) => {
   switch(action.type) {
     case 'INCREMENT':
