@@ -1,8 +1,8 @@
 import { createStore } from 'redux';
 
-const incrementCount = (payload = {}) => ({
+const incrementCount = ({ incrementBy } = {}) => ({
   type: 'INCREMENT',
-  incrementBy: typeof payload.incrementBy === "number" ? payload.incrementBy : 1
+  incrementBy: typeof incrementBy === "number" ? incrementBy : 1
 });
 
 const store = createStore((state = { count: 0 }, action) => {
