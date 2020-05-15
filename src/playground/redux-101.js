@@ -39,10 +39,7 @@ const unsubscribe = store.subscribe(() => {
 
 store.dispatch(decrementCount());
 
-store.dispatch({
-  type: 'DECREMENT',
-  decrementBy: 5
-});
+store.dispatch(decrementCount({ decrementBy: 10}));
 store.dispatch(incrementCount());
 
 store.dispatch(incrementCount({ incrementBy: 5}));
