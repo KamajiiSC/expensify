@@ -1,15 +1,15 @@
 import { createStore } from 'redux';
 
-const incrementCount = () => ({
-  type: 'INCREMENT'
+const incrementCount = (payload = {}) => ({
+  type: 'INCREMENT',
+  incrementBy: typeof payload.incrementBy === "number" ? payload.incrementBy : 1
 });
 
 const store = createStore((state = { count: 0 }, action) => {
   switch(action.type) {
     case 'INCREMENT':
-      const incrementBy = typeof action.incrementBy === 'number' ? action.incrementBy : 1;
       return{
-        count: state.count + incrementBy
+        count: state.count + action.incrementBy
       };
     case 'DECREMENT': 
     const decrementBy = typeof action.decrementBy === 'number' ? action.decrementBy : 1;
@@ -43,6 +43,8 @@ store.dispatch({
   decrementBy: 5
 });
 store.dispatch(incrementCount());
+
+
 
 store.dispatch({
   type: 'DECREMENT'
