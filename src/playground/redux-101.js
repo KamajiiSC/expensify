@@ -6,7 +6,8 @@ const incrementCount = ({ incrementBy = 1 } = {}) => ({
 });
 
 const decrementCount = ({ decrementBy = 1 } = {}) => ({
-  type: 'DECREMENT'
+  type: 'DECREMENT',
+  decrementBy
 });
 
 const store = createStore((state = { count: 0 }, action) => {
@@ -16,7 +17,6 @@ const store = createStore((state = { count: 0 }, action) => {
         count: state.count + action.incrementBy
       };
     case 'DECREMENT': 
-    const decrementBy = typeof action.decrementBy === 'number' ? action.decrementBy : 1;
       return{
         count: state.count - decrementBy
       };
