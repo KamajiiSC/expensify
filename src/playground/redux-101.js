@@ -53,7 +53,7 @@ store.dispatch(incrementCount());
 
 store.dispatch(incrementCount({ incrementBy: 5}));
 
-store.dispatch(decrementBy());
+store.dispatch(decrementCount());
 
 store.dispatch(resetCount());
 
