@@ -27,7 +27,7 @@ const store = createStore((state = { count: 0 }, action) => {
       };
     case 'SET':
       return {
-        count: action.count
+        count: action.setTo
       }
     case 'RESET':
       return {
