@@ -11,7 +11,8 @@ const decrementCount = ({ decrementBy = 1 } = {}) => ({
 });
 
 const setCount = ({ setTo } = {}) =>({
-  type: 'SET'
+  type: 'SET',
+  setTo 
 });
  
 const store = createStore((state = { count: 0 }, action) => {
