@@ -10,7 +10,7 @@ const decrementCount = ({ decrementBy = 1 } = {}) => ({
   decrementBy
 });
 
-const setCount = ({} = {}) =>({
+const setCount = ({ setTo } = {}) =>({
   type: 'SET'
 });
  
