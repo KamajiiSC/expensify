@@ -14,6 +14,10 @@ const setCount = ({ setTo } = {}) =>({
   type: 'SET',
   setTo 
 });
+
+const resetCount = () => ({
+  type: 'RESET'
+});
  
 const store = createStore((state = { count: 0 }, action) => {
   switch(action.type) {
@@ -53,8 +57,6 @@ store.dispatch({
   type: 'DECREMENT'
 });
 
-store.dispatch({
-  type: 'RESET'
-});
+store.dispatch(resetCount());
 
 store.dispatch(setCount({ setTo: 3 }));
