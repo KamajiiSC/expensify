@@ -44,7 +44,7 @@ store.dispatch({
 });
 store.dispatch(incrementCount());
 
-
+store.dispatch(incrementCount({ incrementBy: 5}));
 
 store.dispatch({
   type: 'DECREMENT'
