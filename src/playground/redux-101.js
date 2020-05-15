@@ -42,6 +42,7 @@ store.dispatch({
   type: 'DECREMENT',
   decrementBy: 5
 });
+store.dispatch(incrementCount());
 
 store.dispatch({
   type: 'DECREMENT'
