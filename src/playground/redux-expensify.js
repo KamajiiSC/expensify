@@ -75,7 +75,9 @@ store.subscribe(() => {
 });
 
 const expenseOne = store.dispatch(addExpense({description: 'Rent', amount: 100}));
-const expenseTwo = store.dispatch(addExpense({description: 'Rent', amount: 100}));
+const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 230}));
+
+store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
 console.log(store.getState());
 
