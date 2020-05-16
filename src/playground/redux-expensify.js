@@ -44,11 +44,12 @@ const expensesReducer = (state = expensesReducerDefaultState, action) =>  {
         action.expense
       ];
       case 'REMOVE_EXPENSE':
-        return state.filter(action.id);
+        return state.filter(()=>{
+          
+        });
     default:
       return state;
   }
-
 }
 
 // Filters Reducer
@@ -86,7 +87,6 @@ const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 230
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
-console.log(store.getState());
 
 const demoState = {
   expenses: [{
