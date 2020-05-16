@@ -20,6 +20,11 @@ const expensesReducer = (state = expensesReducerDefaultState, action) =>  {
 
 }
 
+//Store Creation
+const store = createStore(expensesReducer);
+
+console.log(store.getState());
+
 const demoState = {
   expense: [{
     id: 'poihasfj',
