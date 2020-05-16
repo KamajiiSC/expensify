@@ -21,6 +21,10 @@ const addExpense = (
 });
 
 //REMOVE_EXPENSE
+const removeExpense = ({ id }) => ({
+  type: 'REMOVE_EXPENSE'
+});
+
 //EDIT_EXPENSE
 //SET_TEXT_FILTER
 //SORT_BY_DATE
