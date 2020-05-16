@@ -20,6 +20,15 @@ const expensesReducer = (state = expensesReducerDefaultState, action) =>  {
 
 }
 
+// Filters Reducer
+
+const filterReducer = (state, action) => {
+  switch(action.type) {
+    default:
+      return state;
+  }
+}
+
 //Store Creation
 const store = createStore(
   combineReducers({
