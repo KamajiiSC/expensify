@@ -21,12 +21,16 @@ const expensesReducer = (state = expensesReducerDefaultState, action) =>  {
 }
 
 //Store Creation
-const store = createStore(expensesReducer);
+const store = createStore(
+  combineReducers({
+    expenses: expensesReducer
+  })
+);
 
 console.log(store.getState());
 
 const demoState = {
-  expense: [{
+  expenses: [{
     id: 'poihasfj',
     description: 'January Rent',
     note: 'This was final payment for address',
