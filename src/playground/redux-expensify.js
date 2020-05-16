@@ -12,8 +12,11 @@ const addExpense = (
 ) => ({
   type: 'ADD_EXPENSE',
   expense:{ 
-    id: uuid()
-
+    id: uuid(),
+    description,
+    note,
+    amount,
+    createdAt
   }
 });
 
