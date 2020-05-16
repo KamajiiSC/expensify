@@ -39,7 +39,8 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
 //Store Creation
 const store = createStore(
   combineReducers({
-    expenses: expensesReducer
+    expenses: expensesReducer,
+    filter: filterReducer
   })
 );
 
