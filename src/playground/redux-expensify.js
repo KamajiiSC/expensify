@@ -10,8 +10,9 @@ import { createStore, combineReducers } from 'redux';
 //SET_END_DATE
 
 //Expenses Reducer
+const expensesReducerDefaultState = [];
 
-const expensesReducer = (state = [], action) =>  {
+const expensesReducer = (state = expensesReducerDefaultState, action) =>  {
 
 }
 
