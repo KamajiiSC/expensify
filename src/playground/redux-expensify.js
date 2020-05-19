@@ -101,8 +101,10 @@ const expenseOne = store.dispatch(addExpense({description: 'Rent', amount: 100})
 const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 230}));
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
-
 store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
+
+store.dispatch(setTextFilter('rent'));
+store.dispatch(setTextFilter(''));
 
 const demoState = {
   expenses: [{
