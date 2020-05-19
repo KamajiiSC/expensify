@@ -27,6 +27,12 @@ const removeExpense = ({ id }) => ({
 });
 
 //EDIT_EXPENSE
+const editExpense = (id, updates) => ({
+  type: 'EDIT_EXPENSE',
+  id,
+  updates
+});
+
 //SET_TEXT_FILTER
 //SORT_BY_DATE
 //SORT_BY_AMOUNT
