@@ -34,8 +34,9 @@ const editExpense = (id, updates) => ({
 });
 
 //SET_TEXT_FILTER
-const setTextFilter = () => ({
-  type: 'SET_TEXT_FILTER'
+const setTextFilter = (text) => ({
+  type: 'SET_TEXT_FILTER',
+  text
 });
 
 //SORT_BY_DATE
