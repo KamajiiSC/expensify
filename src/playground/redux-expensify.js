@@ -34,6 +34,10 @@ const editExpense = (id, updates) => ({
 });
 
 //SET_TEXT_FILTER
+const setTextFilter = () => ({
+  type: 'SET_TEXT_FILTER'
+});
+
 //SORT_BY_DATE
 //SORT_BY_AMOUNT
 //SET_START_DATE
