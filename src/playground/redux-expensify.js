@@ -85,6 +85,7 @@ const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 230
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
+store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
 
 const demoState = {
   expenses: [{
@@ -101,3 +102,9 @@ const demoState = {
     endDate: undefined
   }
 };
+
+const user = {
+  name: 'Jen', 
+  age:24
+};
+
