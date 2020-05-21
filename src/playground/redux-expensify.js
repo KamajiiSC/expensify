@@ -111,6 +111,10 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
         ...state,
         sortBy: 'amount'
       }
+    case 'SET_START_DATE':
+      return{
+        
+      }
     default:
       return state;
   }
