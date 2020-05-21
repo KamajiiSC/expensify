@@ -131,7 +131,9 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
 }
 // Get visible expenses
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
-  return expenses;
+  return expenses.filter((expense) => {
+
+  })
 };
 
 //Store Creation
