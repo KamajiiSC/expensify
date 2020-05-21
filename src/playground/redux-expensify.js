@@ -40,7 +40,7 @@ const setTextFilter = (text) => ({
 });
 
 //SORT_BY_DATE
-const sortBydate = () => ({
+const sortByDate = () => ({
   type: 'SORT_BY_DATE'
 });
 
@@ -152,4 +152,3 @@ const demoState = {
     endDate: undefined
   }
 };
-
