@@ -129,6 +129,10 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
       return state;
   }
 }
+// Get visible expenses
+const getVisibleExpenses = () => {
+
+};
 
 //Store Creation
 const store = createStore(
