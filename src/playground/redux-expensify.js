@@ -130,7 +130,7 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
   }
 }
 // Get visible expenses
-const getVisibleExpenses = () => {
+const getVisibleExpenses = (expenses, filters) => {
 
 };
 
