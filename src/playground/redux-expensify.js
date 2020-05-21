@@ -50,6 +50,10 @@ const sortByAmount = () => ({
 });
 
 //SET_START_DATE
+const setStartDate = () => ({
+  type: 'SET_START_DATE',
+});
+
 //SET_END_DATE
 
 //Expenses Reducer
