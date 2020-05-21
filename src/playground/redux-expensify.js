@@ -120,6 +120,10 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
         ...state,
         startDate: action.startDate
       }
+    case 'SET_END_DATE':
+      return{
+        ...state,
+      }
     default:
       return state;
   }
