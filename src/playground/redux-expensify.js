@@ -92,6 +92,11 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
         ...state,
         text: action.text
       }
+    case 'SORT_BY_DATE':
+      return{
+        ...state,
+        
+      }
     default:
       return state;
   }
