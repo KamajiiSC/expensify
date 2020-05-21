@@ -56,6 +56,9 @@ const setStartDate = (startDate) => ({
 });
 
 //SET_END_DATE
+const setEndDate = () => ({
+  type: 'SET_END_DATE',
+});
 
 //Expenses Reducer
 const expensesReducerDefaultState = [];
