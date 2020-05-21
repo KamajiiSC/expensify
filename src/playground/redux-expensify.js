@@ -103,7 +103,8 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
       }
     case 'SORT_BY_AMOUNT':
       return{
-        
+        ...state,
+        sortBy: 'amount'
       }
     default:
       return state;
