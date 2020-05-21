@@ -50,8 +50,9 @@ const sortByAmount = () => ({
 });
 
 //SET_START_DATE
-const setStartDate = () => ({
+const setStartDate = (startDate) => ({
   type: 'SET_START_DATE',
+  startDate
 });
 
 //SET_END_DATE
