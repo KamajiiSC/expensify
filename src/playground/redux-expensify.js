@@ -133,7 +133,7 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
   return expenses.filter((expense) => {
     const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
-    const endDateMatch;
+    const endDateMatch = typeof endDate !== 'number' || expense.createdAt <= endDate;;
     const textMatch;
 
     return startDateMatch && endDateMatch && textMatch;
