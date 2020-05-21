@@ -137,6 +137,12 @@ store.dispatch(setTextFilter(''));
 store.dispatch(sortByAmount());
 store.dispatch(sortByDate());
 
+store.dispatch(setStartDate(125));
+store.dispatch(setStartDate(0));
+store.dispatch(setEndDate(350));
+store.dispatch(setEndDate(0));
+
+
 const demoState = {
   expenses: [{
     id: 'poihasfj',
