@@ -101,6 +101,10 @@ const filterReducer = (state = filterReducerDefaultState, action) => {
         ...state,
         sortBy: 'date'
       }
+    case 'SORT_BY_AMOUNT':
+      return{
+        
+      }
     default:
       return state;
   }
