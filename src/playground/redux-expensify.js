@@ -45,6 +45,10 @@ const sortBydate = () => ({
 });
 
 //SORT_BY_AMOUNT
+const sortByAmount = () => ({
+  type: 'SORT_BY_AMOUNT'
+});
+
 //SET_START_DATE
 //SET_END_DATE
 
