@@ -40,6 +40,10 @@ const setTextFilter = (text) => ({
 });
 
 //SORT_BY_DATE
+const sortBydate = () => ({
+  type: 'SORT_BY_DATE'
+});
+
 //SORT_BY_AMOUNT
 //SET_START_DATE
 //SET_END_DATE
