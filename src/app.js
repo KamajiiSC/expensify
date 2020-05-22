@@ -4,8 +4,7 @@ import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
-import { getVisibleExpenses } from './selectors/expenses';
-
+import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
@@ -18,7 +17,9 @@ console.log(store.getState());
 
 setTextFilter('water');
 
-
+const state = store.getState();
+const visibleExpenses = getVisibleExpenses(state.expenses, state.filter);
+console.log(visibleExpenses);
 
 
 ReactDOM.render(<AppRouter />, document.getElementById('app'));
