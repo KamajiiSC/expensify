@@ -15,6 +15,6 @@ store.dispatch(addExpense({description: 'Gas bill', amount: 100, createdAt: 10})
 
 console.log(store.getState());
 
-setTextFilter();
+setTextFilter('water');
 
 ReactDOM.render(<AppRouter />, document.getElementById('app'));
