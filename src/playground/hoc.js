@@ -10,4 +10,10 @@ const Info = (props) => (
   </div>
 );
 
+const withAdminWarning = () => {
+
+};
+
+const AdminInfo = withAdminWarning(Info);
+
 ReactDOM.render(<Info info='These are deatils'/>, document.getElementById('app'));
