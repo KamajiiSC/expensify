@@ -10,8 +10,10 @@ const Info = (props) => (
   </div>
 );
 
-const withAdminWarning = () => {
+const withAdminWarning = (WrappedComponent) => {
+  return (props) => {
 
+  }
 };
 
 const AdminInfo = withAdminWarning(Info);
