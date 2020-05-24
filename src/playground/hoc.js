@@ -3,11 +3,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Info = (props) => {
+const Info = (props) => (
   <div>
     <h1>info</h1>
     <p>The info is: {props.info}</p>
   </div>
-}
+);
 
-ReactDOM.render
+ReactDOM.render(<Info info='These are deatils'/>, document.getElementById('app'));
