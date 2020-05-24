@@ -1,0 +1,1 @@
+// Higher Order Components - component that renders another component
