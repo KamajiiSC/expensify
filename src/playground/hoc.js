@@ -16,11 +16,19 @@ const withAdminWarning = (WrappedComponent) => {
       {props.isAdmin && <p>This is private info. Please do not share!</p>}
       <WrappedComponent {...props}/>
     </div>
-  )
+  );
+};
+
+const requireAuthentication = () => {
+  return () => (
+    <div>
+
+    </div>
+  );
 };
 
 const AdminInfo = withAdminWarning(Info);
-const AuthInfo = requireAuthentication(Info);
+const AuthInfo = requireAuthentication(isAuthenticated, Info);
 
 // ReactDOM.render(<AdminInfo isAdmin={false} info='These are deatils'/>, document.getElementById('app'));
 ReactDOM.render(<AuthInfo isAuthenticated={false} info='These are deatils'/>, document.getElementById('app'));
