@@ -7,8 +7,10 @@ const ExpenseList = () => (
   </div>
 );
 
-const ConnectedExpenseList = connect(() => {
-  
+const ConnectedExpenseList = connect((state) => {
+  return{
+    expenses: state.expenses
+  }
 })(ExpenseList);
 
-export default ExpenseList;
+export default ConnectedExpenseList;
