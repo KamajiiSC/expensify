@@ -21,4 +21,4 @@ const withAdminWarning = (WrappedComponent) => {
 
 const AdminInfo = withAdminWarning(Info);
 
-ReactDOM.render(<AdminInfo info='These are deatils'/>, document.getElementById('app'));
+ReactDOM.render(<AdminInfo isAdmin={false} info='These are deatils'/>, document.getElementById('app'));
