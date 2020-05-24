@@ -7,4 +7,8 @@ const ExpenseList = () => (
   </div>
 );
 
+const ConnectedExpenseList = connect(() => {
+  
+})(ExpenseList);
+
 export default ExpenseList;
