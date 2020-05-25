@@ -5,13 +5,11 @@ import { connect } from 'react-redux';
 const ExpenseList = (props) => (
   <div>
     <h1>Expense List</h1>
-    {
-      props.expenses.map((expense) => (
-        <ExpenseListItem 
-        expense={expense}
-        />
-      ))
-    }
+    {props.expenses.map((expense) => {
+        return <ExpenseListItem 
+        {...expense}
+        />;
+      })}
   </div>
 );
 

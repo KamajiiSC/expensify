@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ExpenseListItem = (props) => (
+const ExpenseListItem = ({ description, amount, createdAt }) => (
   <div>
-    <h2>{props.expense.description}</h2>
-    <p>Amount: {props.expense.amount}</p>
-    <p>Created at: {props.expense.createdAt}</p>
+    <h2>{description}</h2>
+    <p>Amount: {amount}</p>
+    <p>Created at: {createdAt}</p>
   </div>
 );
 
