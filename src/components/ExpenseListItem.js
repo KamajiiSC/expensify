@@ -7,3 +7,5 @@ const ExpenseListItem = (props) => (
     <p>Created at: {props.expenses.createdAt}</p>
   </div>
 );
+
+export default ExpenseListItem;
