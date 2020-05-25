@@ -8,7 +8,7 @@ const ExpenseList = (props) => (
     {
       props.expenses.map((expense) => (
         <ExpenseListItem 
-        
+        expense={expense}
         />
       ))
     }
