@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ExpenseListItem = () => (
+const ExpenseListItem = (props) => (
   <div>
-    
+
   </div>
 );
