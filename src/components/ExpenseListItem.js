@@ -1,8 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 const ExpenseListItem = (props) => (
   <div>
-
+    <h2>{props.expenses.description}</h2>
   </div>
 );
