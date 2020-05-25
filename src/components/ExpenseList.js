@@ -17,8 +17,8 @@ const ExpenseList = (props) => (
 
 const mapStateToProps = (state) => {
   return{
-    expenses: state.expenses
-  }
-}
+    expenses: selectExpenses(state.expenses, state.filter)
+  };
+};
 
 export default connect(mapStateToProps)(ExpenseList);
