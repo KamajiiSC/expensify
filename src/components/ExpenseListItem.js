@@ -5,6 +5,7 @@ const ExpenseListItem = ({ description, amount, createdAt }) => (
     <h2>{description}</h2>
     <p>Amount: {amount}</p>
     <p>Created at: {createdAt}</p>
+    <button>Remove</button>
   </div>
 );
 
