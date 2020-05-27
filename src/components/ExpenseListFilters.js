@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ExpenseListFilters = () => (
+const ExpenseListFilters = (props) => (
   <div>
-    <input type='text' />
+    <input type='text' value={props.filter.text}/>
   </div>
 );
 
-const mapStateToPage = (state) => {
+const mapStateToProps = (state) => {
   return{
-    filters: state.filters
+    filter: state.filter
   };
 };
 
-export default connect()(ExpenseListFilters);
+export default connect(mapStateToProps)(ExpenseListFilters);
