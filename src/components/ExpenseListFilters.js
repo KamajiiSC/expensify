@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const ExpenseListFilters = () => (
   <div>
@@ -6,4 +7,4 @@ const ExpenseListFilters = () => (
   </div>
 );
 
-export default ExpenseListFilters;
+export default connect()(ExpenseListFilters);
