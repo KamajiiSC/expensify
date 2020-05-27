@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const ExpenseListItem = ({ description, amount, createdAt }) => (
   <div>
@@ -9,4 +10,4 @@ const ExpenseListItem = ({ description, amount, createdAt }) => (
   </div>
 );
 
-export default ExpenseListItem;
+export default connect()(ExpenseListitem);
