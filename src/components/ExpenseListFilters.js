@@ -7,4 +7,10 @@ const ExpenseListFilters = () => (
   </div>
 );
 
+const mapStateToPage = (state) => {
+  return{
+    filters: state.filters
+  };
+};
+
 export default connect()(ExpenseListFilters);
