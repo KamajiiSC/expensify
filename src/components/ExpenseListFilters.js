@@ -8,8 +8,8 @@ const ExpenseListFilters = (props) => (
       props.dispatch(setTextFilter(e.target.value))
     )}/>
     <select>
-      <option>Date</option>
-      <option>Amount</option>
+      <option value='date'>Date</option>
+      <option value='amount'>Amount</option>
     </select>
   </div>
 );
