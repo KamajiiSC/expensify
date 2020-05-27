@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 
 const ExpenseListFilters = (props) => (
   <div>
-    <input type='text' value={props.filter.text}/>
+    <input type='text' value={props.filter.text} onChange={(e) =>
+      
+    )}/>
   </div>
 );
 
