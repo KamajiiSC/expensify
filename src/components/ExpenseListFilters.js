@@ -4,10 +4,14 @@ import { setTextFilter } from '../actions/filters';
 
 const ExpenseListFilters = (props) => (
   <div>
-    <input type='text' value={props.filter.text} onChange={(e) => (
+    <input type='text' value={props.filter.text} 
+    onChange={(e) => (
       props.dispatch(setTextFilter(e.target.value))
     )}/>
-    <select>
+    <select 
+    onChange = {(e) => (
+      
+    )}>
       <option value='date'>Date</option>
       <option value='amount'>Amount</option>
     </select>
