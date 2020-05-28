@@ -13,7 +13,7 @@ const store = configureStore();
 
 store.dispatch(addExpense({description: 'Water bill', amount: 250, createdAt: 5}));
 store.dispatch(addExpense({description: 'Gas bill', amount: 100, createdAt: 10}));
-store.dispatch(addExpense({description: 'Rent', amount: 1000000, createdAt: 10}));
+store.dispatch(addExpense({description: 'Rent', amount: 1000000, createdAt: 2}));
 
 console.log(store.getState());
 
