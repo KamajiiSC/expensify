@@ -10,7 +10,7 @@ const ExpenseListFilters = (props) => (
     )}/>
     <select 
     onChange = {(e) => (
-      
+      console.log(e.target.value)
     )}>
       <option value='date'>Date</option>
       <option value='amount'>Amount</option>
