@@ -4,8 +4,9 @@ export default class ExpenseForm extends React.Component {
   state = {
     description: ''
   }
-  onDescriptionChange = () => {
-
+  onDescriptionChange = (e) => {
+    const description = e.target.value
+    this.setState(() => ({ description }));
   };
   render() {
     return (
