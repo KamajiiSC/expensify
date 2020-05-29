@@ -8,7 +8,8 @@ export default class ExpenseForm extends React.Component {
     description: '',
     note: '',
     amount: '',
-    createdAt: moment()
+    createdAt: moment(),
+    calendarFocused: false
   }
   onDescriptionChange = (e) => {
     const description = e.target.value;
@@ -48,11 +49,11 @@ export default class ExpenseForm extends React.Component {
           <SingleDatePicker 
             date={this.state.createdAt}
             onDateChange={this.onDateChange}
-            focused
+            focused={this.state.calendarFocused}
             onFocusChange
           />
           <textarea
-          placeholder="Add a nnote for your expense(optional"
+          placeholder="Add a note for your expense(optional"
           onChange={this.onNoteChange}
           >
           </textarea>
