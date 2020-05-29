@@ -44,6 +44,12 @@ export default class ExpenseForm extends React.Component {
             value={this.state.amount}
             onChange={this.onAmountChange}
           />
+          <SingleDatePicker 
+            date
+            onDateChange
+            focused
+            onFocusChange
+          />
           <textarea
           placeholder="Add a nnote for your expense(optional"
           onChange={this.onNoteChange}
