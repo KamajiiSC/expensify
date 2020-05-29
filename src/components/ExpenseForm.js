@@ -24,7 +24,10 @@ export default class ExpenseForm extends React.Component {
       console.log('hello')
       this.setState(() => ({ amount }));
     }
-  }
+  };
+  onDateChange = (createdAt) => {
+    this.setState(() => ({ createdAt }));
+  };
   render() {
     return (
       <div>
@@ -44,7 +47,7 @@ export default class ExpenseForm extends React.Component {
           />
           <SingleDatePicker 
             date={this.state.createdAt}
-            onDateChange
+            onDateChange={this.onDateChange}
             focused
             onFocusChange
           />
