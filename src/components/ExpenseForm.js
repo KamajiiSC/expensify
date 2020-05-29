@@ -4,6 +4,9 @@ export default class ExpenseForm extends React.Component {
   state = {
     description: ''
   }
+  onDescriptionChange = () => {
+
+  };
   render() {
     return (
       <div>
@@ -13,6 +16,7 @@ export default class ExpenseForm extends React.Component {
             placeholder="Description"
             autoFocus
             value={this.state.description}
+            onChange={this.onDescriptionChange}
           />
           <input 
             type="number"
