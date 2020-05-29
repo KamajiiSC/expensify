@@ -9,7 +9,7 @@ export default class ExpenseForm extends React.Component {
     const description = e.target.value;
     this.setState(() => ({ description }));
   };
-  onTextAreaChange = (e) => {
+  onNoteChange = (e) => {
     const note = e.target.value;
     this.setState(() => ({note}));
   };
@@ -30,7 +30,7 @@ export default class ExpenseForm extends React.Component {
           />
           <textarea
           placeholder="Add a nnote for your expense(optional"
-          onChange={this.onTextAreaChange}
+          onChange={this.onNoteChange}
           >
           </textarea>
           <button>Add Expense</button>
