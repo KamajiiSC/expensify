@@ -14,6 +14,9 @@ export default class ExpenseForm extends React.Component {
     const note = e.target.value;
     this.setState(() => ({note}));
   };
+  onAmountChange = (e) => {
+
+  }
   render() {
     return (
       <div>
@@ -28,6 +31,8 @@ export default class ExpenseForm extends React.Component {
           <input 
             type="text"
             placeholder="Amount"
+            value={this.state.amount}
+            onChange={this.onNoteChange}
           />
           <textarea
           placeholder="Add a nnote for your expense(optional"
