@@ -2,15 +2,16 @@ import React from 'react';
 
 export default class ExpenseForm extends React.Component {
   state = {
-    description: ''
+    description: '',
+    note: ''
   }
   onDescriptionChange = (e) => {
     const description = e.target.value;
     this.setState(() => ({ description }));
   };
   onTextAreaChange = (e) => {
-    const area = e.target.value;
-    this.setState(() => ({area}));
+    const note = e.target.value;
+    this.setState(() => ({note}));
   };
   render() {
     return (
