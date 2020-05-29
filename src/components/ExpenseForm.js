@@ -12,6 +12,7 @@ export default class ExpenseForm extends React.Component {
             type="text"
             placeholder="Description"
             autoFocus
+            value={this.state.description}
           />
           <input 
             type="number"
