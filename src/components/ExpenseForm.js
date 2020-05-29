@@ -6,9 +6,13 @@ export default class ExpenseForm extends React.Component {
       <div>
         <form>
           <input 
-          type="text"
-          placeholder="Description"
-          autoFocus
+            type="text"
+            placeholder="Description"
+            autoFocus
+          />
+          <input 
+            type="number"
+            placeholder="Amount"
           />
         </form>
       </div>
