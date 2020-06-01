@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 
 const AddExpensePage = () => (
@@ -12,4 +13,4 @@ const AddExpensePage = () => (
   </div>
 );
 
-export default AddExpensePage;
+export default connect()(AddExpensePage);
