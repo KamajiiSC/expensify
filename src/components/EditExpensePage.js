@@ -16,10 +16,10 @@ const EditExpensePage = (props) => {
         }}
       />
       <button 
-        expense={props.expense}
-        onClick={() => (
-        props.dispatch(removeExpense({id: props.expense.id}))
-        )}
+        onClick={() => {
+          props.dispatch(removeExpense({ id: props.expense.id }));
+          props.history.push('/');
+        }}
         >Remove
       </button>
     </div>
