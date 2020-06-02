@@ -10,4 +10,8 @@ const EditExpensePage = (props) => {
   );
 };
 
+const mapStateToProps = (state) => {
+
+};
+
 export default connect()(EditExpensePage);
