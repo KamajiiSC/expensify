@@ -10,7 +10,7 @@ const EditExpensePage = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, props) => {
 
 };
 
