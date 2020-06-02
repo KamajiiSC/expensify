@@ -11,10 +11,6 @@ const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
     </Link>
     <p>Amount: {amount}</p>
     <p>Created at: {createdAt}</p>
-    <button onClick={() => (
-      dispatch(removeExpense({id}))
-    )}>
-    Remove</button>
   </div>
 );
 
