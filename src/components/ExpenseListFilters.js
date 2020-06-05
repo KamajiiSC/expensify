@@ -7,6 +7,9 @@ class ExpenseListFilters extends React.Component {
   state = {
     calendarFocused: null
   };
+  onDatesChange = ({ startDate, endDate }) => {
+
+  };
   render() {
     return (
     <div>
