@@ -3,8 +3,12 @@ const generateGreeting = (name) => `Hello ${name}!`;
 
 
 test('should add two numbers', () => {
-  const result = add(3, 4);
-  const greeting = generateGreeting('Mike');
+  const result = add(3, 4); 
 
   expect(result).toBe(7);
+});
+
+test('Should insert name into greeting', () => {
+  const greeting = generateGreeting('Mike');
+  
 });
