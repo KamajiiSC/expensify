@@ -10,5 +10,6 @@ test('should add two numbers', () => {
 
 test('Should insert name into greeting', () => {
   const greeting = generateGreeting('Mike');
-  
+
+  expect(greeting).toContain('Mike');
 });
