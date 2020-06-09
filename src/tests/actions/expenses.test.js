@@ -26,6 +26,7 @@ test('Should setup add expense action object with provided values', () => {
     createdAt: 1000,
     note: 'Last months rent'
   }
+  const action = addExpense(expenseData);
 });
 
 test('Should setup add expense action object with default values', () => {
