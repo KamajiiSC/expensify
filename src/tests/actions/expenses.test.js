@@ -37,5 +37,5 @@ test('Should setup add expense action object with provided values', () => {
 });
 
 test('Should setup add expense action object with default values', () => {
-
+  const action = addExpense();
 });
