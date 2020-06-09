@@ -7,3 +7,7 @@ test('should setup remove expense action object', () => {
     id: '123abc'
   })
 });
+
+test('should set an edit existing expense action object', () => {
+  const action = editExpense({ id: '12555'}, { note: 'Hello' })
+});
