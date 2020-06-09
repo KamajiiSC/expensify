@@ -22,5 +22,5 @@ test('should generate set text filter action object with inputted value', () => 
 });
 
 test('should generate set text filter action object with default value', () => {
-
+  const action = setTextFilter();
 });
