@@ -18,3 +18,11 @@ test('should set an edit existing expense action object', () => {
     }
   })
 });
+
+test('Should setup add expense action object with provided values', () => {
+
+});
+
+test('Should setup add expense action object with default values', () => {
+
+});
