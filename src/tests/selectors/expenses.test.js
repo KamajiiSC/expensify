@@ -27,5 +27,5 @@ test('should filter by test value', ()=> {
     startDate: undefined,
     endDate: undefined
   };
-  const result = selectExpenses();
+  const result = selectExpenses(expenses, filters);
 });
