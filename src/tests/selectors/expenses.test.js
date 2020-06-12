@@ -28,4 +28,5 @@ test('should filter by test value', ()=> {
     endDate: undefined
   };
   const result = selectExpenses(expenses, filters);
+  expect(result).toEqual([ expenses[2], expenses[1]])
 });
