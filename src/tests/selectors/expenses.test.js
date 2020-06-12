@@ -22,7 +22,10 @@ const expenses = [{
 
 test('should filter by test value', ()=> {
   const filters = {
-    text: 'e'
+    text: 'e',
+    sortBy: 'date',
+    startDate: undefined,
+    endDate: undefined
   };
   const result = selectExpenses();
 });
