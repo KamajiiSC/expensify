@@ -21,5 +21,8 @@ const expenses = [{
 }]
 
 test('should filter by test value', ()=> {
+  const filters = {
+    text: 'e'
+  };
   const result = selectExpenses();
 });
