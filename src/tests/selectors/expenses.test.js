@@ -1,5 +1,5 @@
-import selectExpenses from '../../selectors/expenses';
 import moment from 'moment';
+import selectExpenses from '../../selectors/expenses';
 
 const expenses = [{
   id: '1',
@@ -40,4 +40,6 @@ test('should filter by startDate', () => {
     startDate: moment(0),
     endDate: undefined
   }
+  const result = selectExpenses(expenses, filters);
+  expect(result).toEqual(expenses[2], expenses[0])
 });
