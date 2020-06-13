@@ -19,7 +19,7 @@ const expenses = [{
   description: 'Credit Card',
   note: '', 
   amount: 4500,
-  createdAt: moment(0).add(4, 'days'). valueOf()
+  createdAt: moment(0).add(4, 'days').valueOf()
 }]
 
 test('should filter by test value', ()=> {
