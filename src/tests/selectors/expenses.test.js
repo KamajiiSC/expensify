@@ -53,7 +53,7 @@ test('should filter by endDate', () => {
     endDate: moment(0)
   };
   const result = selectExpenses(expenses, filters);
-  expect(result).toEqual([expenses[1], expenses[0]]);
+  expect(result).toEqual([expenses[0], expenses[1]]);
 });
 // should sort by date
 
