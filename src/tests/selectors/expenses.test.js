@@ -69,3 +69,12 @@ test('should sort by date', () => {
 })
 
 // should sort by amount
+
+test('should sort by amount', () => {
+  const filters = {
+    text: '',
+    sort: 'amount',
+    startDate: undefined,
+    endDate: undefined
+  }
+});
