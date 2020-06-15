@@ -60,7 +60,7 @@ test('should filter by endDate', () => {
 test('should sort by date', () => {
   const filters = {
     text: '',
-    sort: 'date',
+    sortBy: 'date',
     startDate: undefined,
     endDate: undefined
   }
