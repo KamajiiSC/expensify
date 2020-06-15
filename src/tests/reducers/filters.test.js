@@ -43,5 +43,5 @@ test('should set startDate filter', () => {
 
 //should set endDate filter
 test('should set endDate filter', () => {
-
+  const state =filtersReducer( undefined, {type: 'SET_END_DATE', endDate: moment(0)});
 });
