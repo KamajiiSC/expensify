@@ -37,6 +37,11 @@ test(' should set text filter', () => {
 // should set startDate filter
 test('should set startDate filter', () => {
   const state = filtersReducer( undefined, { type: 'SET_STARTDATE_FILTER', startDate: moment(0) });
+  expect(state.startDate).toBe
+  (moment(0));
 });
 
 //should set endDate filter
+test('should set endDate filter', () => {
+
+});
