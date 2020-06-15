@@ -17,5 +17,8 @@ test('should set sortBy to amount', () => {
 });
 
 test('should set sortBy to date', () => {
-
+  const currentState = {
+    
+  };
+  const action = { type: 'SORT_BY_DATE' }
 });
