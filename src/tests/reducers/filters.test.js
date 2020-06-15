@@ -30,8 +30,10 @@ test('should set sortBy to date', () => {
 
 // should set text filter
 test(' should set text filter', () => {
+  const state = filtersReducer(undefined, { type: 'SET_TEXT_FILTER', text: 'Rent'});
 
 });
+
 // should set startDate filter
 
 //should set endDate filter
