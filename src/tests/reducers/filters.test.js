@@ -7,6 +7,6 @@ test ('should setup default filter values', () => {
     text: '',
     sortBy: 'date',
     startDate: moment().startOf('month'),
-    endDate: moment().endOf('month');
+    endDate: moment().endOf('month')
   })
 })
