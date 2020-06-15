@@ -35,5 +35,8 @@ test(' should set text filter', () => {
 });
 
 // should set startDate filter
+test('should set startDate filter', () => {
+
+});
 
 //should set endDate filter
