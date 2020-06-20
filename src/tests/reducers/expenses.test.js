@@ -48,11 +48,18 @@ test('should add an expense', () => {
 test('shoul edit an exisiting expense',() => {
   const action = {
     type: 'EDIT_EXPENSE',
-    id: expenses[1],
+    id: expenses[0].id,
     updates: {
       amount: 900
     }
   };
   const state = expensesReducer(expenses, action);
+  expect(state).toEqual([ {
+    id: '1',
+    description: 'gum',
+    note: '', 
+    amount: 900,
+    createdAt: 0
+  }, expenses[1], expenses[2] ])
 });
 // should not edit if expense not found
