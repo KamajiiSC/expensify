@@ -44,8 +44,8 @@ test('should add an expense', () => {
     createdAt: 0
   }])
 });
-// should edit expense
-test('shoul edit an exisiting expense',() => {
+
+test('should edit an exisiting expense',() => {
   const action = {
     type: 'EDIT_EXPENSE',
     id: expenses[0].id,
@@ -62,4 +62,15 @@ test('shoul edit an exisiting expense',() => {
     createdAt: 0
   }, expenses[1], expenses[2] ])
 });
-// should not edit if expense not found
+
+test('should not edit an expense if it expense not found',() => {
+  const action = {
+    type: 'EDIT_EXPENSE',
+    id: -3,
+    updates: {
+      amount: 900
+    }
+  };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual([ expenses[0], expenses[1], expenses[2] ])
+});
