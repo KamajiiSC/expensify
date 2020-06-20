@@ -52,6 +52,7 @@ test('shoul edit an exisiting expense',() => {
     updates: {
       amount: 900
     }
-  }
+  };
+  const state = expensesReducer(expenses, action);
 });
 // should not edit if expense not found
