@@ -45,5 +45,13 @@ test('should add an expense', () => {
   }])
 });
 // should edit expense
-
+test('shoul edit an exisiting expense',() => {
+  const action = {
+    type: 'EDIT_EXPENSE',
+    id: expenses[1],
+    updates: {
+      amount: 900
+    }
+  }
+});
 // should not edit if expense not found
