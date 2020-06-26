@@ -31,3 +31,7 @@ test('should changed description  on input change', () => {
   });
   expect(wrapper.state('description')).toBe(value);
 });
+
+test('should set note on textarea change', () => {
+  const value = 'New Note';
+});
