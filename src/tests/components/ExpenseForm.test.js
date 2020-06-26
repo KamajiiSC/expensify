@@ -19,4 +19,5 @@ test('should render error for invalid form submission', () => {
     preventDefault: () => {}
   });
   expect(wrapper.state('error').length).toBeGreaterThan(0);
+  expect(wrapper).toMatchSnapshot();
 });
