@@ -38,4 +38,5 @@ test('should set note on textarea change', () => {
   wrapper.find('textarea').at(0).simulate('change', {
     target: { value }
   });
+  expect(wrapper.state('note')).toBe(value);
 });
