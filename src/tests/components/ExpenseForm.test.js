@@ -15,5 +15,7 @@ test('should render Expense Form with data provided', () => {
 
 test('should render error for invalid form submission', () => {
   const wrapper = shallow(<ExpenseForm />);
-  wrapper.find('form').simulate('submit');
+  wrapper.find('form').simulate('submit', {
+    preventDefault: () => {}
+  });
 });
