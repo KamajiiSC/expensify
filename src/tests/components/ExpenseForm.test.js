@@ -24,5 +24,9 @@ test('should render error for invalid form submission', () => {
 });
 
 test('should changed description  on input change', () => {
+  const value = 'New description';
   const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('input').at(0).simulate('change', {
+    target: { value }
+  });
 });
