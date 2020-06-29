@@ -65,4 +65,5 @@ test('should call onSubmit prop for valid form submission', () => {
   wrapper.find('form').simulate('submit', {
     preventDefault: () => {}
   });
+  expect(wrapper.state('error')).toBe('');
 });
