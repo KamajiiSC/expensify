@@ -73,3 +73,7 @@ test('should call onSubmit prop for valid form submission', () => {
     createdAt: expenses[0].createdAt
   });
 });
+
+test('should set new date on date change', () => {
+  const wrapper = shallow(<ExpenseForm />);
+});
