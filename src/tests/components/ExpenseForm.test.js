@@ -52,4 +52,8 @@ test('should set the amount if input valid',() => {
 
 test('should not set amount if input is invalid', () => {
   const value = '12.122';
+  const wrapper= shallow(<ExpenseForm />);
+  wrapper.find('input').at(1).simulate('change', {
+    target: {value}
+  });
 });
