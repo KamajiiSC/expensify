@@ -81,3 +81,7 @@ test('should set new date on date change', () => {
   wrapper.find('SingleDatePicker').prop('onDateChange')(now);
   expect(wrapper.state('createdAt')).toEqual(now);
 });
+
+test('should set calendar focused on change', () => {
+
+});
