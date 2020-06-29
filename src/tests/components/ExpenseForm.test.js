@@ -83,5 +83,5 @@ test('should set new date on date change', () => {
 });
 
 test('should set calendar focused on change', () => {
-
+  const wrapper = shallow(<ExpenseForm />);
 });
