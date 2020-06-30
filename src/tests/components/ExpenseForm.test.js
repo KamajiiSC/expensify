@@ -78,10 +78,11 @@ test('should call onSubmit prop for valid form submission', () => {
 test('should set new date on date change', () => {
   const now = moment();
   const wrapper = shallow(<ExpenseForm />);
-  wrapper.find('SingleDatePicker').prop('onDateChange')(now);
-  expect(wrapper.state('createdAt')).toEqual(now);
+  wrapper.find('withStyles(SingleDatePicker)').prop('onDateChange')(now);
+  expect(wrapper.state('createdAt')).toEqual(now); 
 });
 
 test('should set calendar focused on change', () => {
   const wrapper = shallow(<ExpenseForm />);
+  wrapper.find('withStyles(SingleDatePicker)').prop('onFocusChange')(true);
 });
