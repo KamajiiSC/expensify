@@ -15,4 +15,10 @@ const AddExpensePage = (props) => (
   </div>
 );
 
-export default connect()(AddExpensePage);
+const mapDispatchToProps = (dispatch) => {\
+  return{
+    
+  }
+};
+
+export default connect(undefined, )(AddExpensePage);
