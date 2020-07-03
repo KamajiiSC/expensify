@@ -14,5 +14,8 @@ test('should handle onSubmit', () => {
   const onSubmit = jest.fn();
   const history = { push: jest.fn() }
   const wrapper = shallow(<AddExpensePage />)
-  wrapper.find('ExpenseForm').prop('onSubmit')(expenmmses[1]);
+  wrapper.find('ExpenseForm').prop('onSubmit')(expenses[1]);
+  expect(history.push).toHaveBeenLastCalledWith('/');  
+  expect(onSubmit).toHaveBeenCalledWith(expenses[1]);
 })
+
