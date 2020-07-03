@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow } from 'enzyme';
 import { AddExpensePage} from '../../components/AddExpensePage';
-import { useHistory } from 'react-router-dom';
+import expenses from '../actions/expenses.test'
 
 test('should render AddExpensePage correctly', () => {
   const onSubmit = jest.fn();
@@ -9,3 +9,10 @@ test('should render AddExpensePage correctly', () => {
   const wrapper = shallow(<AddExpensePage onSubmit={onSubmit} history={history}/>);
   expect(wrapper).toMatchSnapshot();
 });
+
+test('should handle onSubmit', () => {
+  const onSubmit = jest.fn();
+  const history = { push: jest.fn() }
+  const wrapper = shallow(<AddExpensePage />)
+  wrapper.find('ExpenseForm').prop('onSubmit')(expenmmses[1]);
+})
