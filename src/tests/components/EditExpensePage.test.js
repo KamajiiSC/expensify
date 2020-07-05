@@ -16,4 +16,7 @@ test('should render EditExpensePage', () => {
   expect(wrapper).toMatchSnapshot();
 });
 //should handle editExpense
+test('should handle editExpense', () => {
+
+});
 //should handle removeExpense
