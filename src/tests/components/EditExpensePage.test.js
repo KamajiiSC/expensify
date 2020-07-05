@@ -17,6 +17,6 @@ test('should render EditExpensePage', () => {
 });
 //should handle editExpense
 test('should handle editExpense', () => {
-
+  wrapper.find('ExpenseForm').prop('onSubmit')(expenses[1])
 });
 //should handle removeExpense
