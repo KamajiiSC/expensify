@@ -54,10 +54,12 @@ class ExpenseListFilters extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return{
+const mapStateToProps = (state) => ({
     filter: state.filter
-  };
-};
+});
+
+const mapDispatchToProps = (dispatch) => ({
+
+});
 
 export default connect(mapStateToProps)(ExpenseListFilters);
