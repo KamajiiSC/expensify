@@ -34,7 +34,11 @@ test('should render ExpenseListFilters with alt data correctly', () => {
 
 // should handle text change
 test('should handle text change', () => {
-
+  const value= 'rent';
+  wrapper.find('input').simulate('change', {
+    target: { value }
+  })
+  expect(setTextFilter).toHaveBeenLastCalledWith(value);
 });
 // should sort by date
 test('should sort by date', () => {
