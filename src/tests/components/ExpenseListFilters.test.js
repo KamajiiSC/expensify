@@ -50,7 +50,11 @@ test('should sort by date', () => {
 });
 // should sort by amount
 test('should sort by amount', () => {
-
+  const value = 'amount';
+  wrapper.find('select').simulate('change', {
+    target: { value }
+  });
+  expect(sortByAmount).toHaveBeenCalled();
 });
 // should handle date changes
 test('should handle date changes', () => {
