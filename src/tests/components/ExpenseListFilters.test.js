@@ -68,5 +68,5 @@ test('should handle date changes', () => {
 });
 // should handle date focus changes
 test('should handle date focus changes', () => {
-
+  const calendarFocused = 'endDate';
 });
