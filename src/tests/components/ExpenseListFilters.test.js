@@ -37,9 +37,18 @@ test('should handle text change', () => {
 
 });
 // should sort by date
+test('should sort by date', () => {
 
+});
 // should sort by amount
+test('should sort by amount', () => {
 
+});
 // should handle date changes
+test('should handle date changes', () => {
 
+});
 // should handle date focus changes
+test('should handle date focus changes', () => {
+
+});
