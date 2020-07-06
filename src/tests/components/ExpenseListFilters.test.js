@@ -14,11 +14,11 @@ beforeEach(() => {
   wrapper = shallow(<ExpenseListFilters
     filters={filters}
     setTextFilter={setTextFilter}
-    sortByDate={sortyByDate}
-    sortByAmount={sortyByAmount}
+    sortByDate={sortByDate}
+    sortByAmount={sortByAmount}
     setStartDate={setStartDate}
     setEndDate={setEndDate}
-    />)
+    />);
 });
 
 test('should render ExpenseListFilters correctly', () => {
