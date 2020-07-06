@@ -31,3 +31,15 @@ test('should render ExpenseListFilters with alt data correctly', () => {
   });
   expect(wrapper).toMatchSnapshot();
 });
+
+// should handle text change
+test('should handle text change', () => {
+
+});
+// should sort by date
+
+// should sort by amount
+
+// should handle date changes
+
+// should handle date focus changes
