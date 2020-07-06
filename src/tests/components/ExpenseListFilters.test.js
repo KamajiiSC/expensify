@@ -20,3 +20,7 @@ beforeEach(() => {
     setEndDate={setEndDate}
     />)
 });
+
+test('should render ExpenseListFilters correctly', () => {
+
+});
