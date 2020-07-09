@@ -18,11 +18,12 @@ module.exports = (env) => {
         exclude: /node_modules/
       }, {
         test: /\.s?css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: CSSExtract.extract({
+          use: [
+            'css-loader',
+            'sass-loader'
+          ]
+        })
       }]
     },
     devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
